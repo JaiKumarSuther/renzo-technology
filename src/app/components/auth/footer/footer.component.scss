@@ -1,0 +1,13 @@
+footer {
+    height: 60px;
+    width: 1440px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    .terms-and-conditions {
+        list-style-type: disc;
+    }
+}
