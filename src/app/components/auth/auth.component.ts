@@ -7,11 +7,12 @@ import { SignupComponent } from './signup/signup.component';
 import { CreatePasswordComponent } from './create-password/create-password.component';
 import { ChangePasswordSuccessComponent } from './change-password-success/change-password-success.component';
 import { ReviewUsComponent } from './review-us/review-us.component';
+import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-auth',
   standalone: true,
-  imports: [LoginComponent, ReviewUsComponent, FooterComponent, ChangePasswordSuccessComponent, CreatePasswordComponent, ResetPasswordComponent, OtpCodeComponent, SignupComponent],
+  imports: [RouterOutlet, LoginComponent, ReviewUsComponent, FooterComponent, ChangePasswordSuccessComponent, CreatePasswordComponent, ResetPasswordComponent, OtpCodeComponent, SignupComponent],
   templateUrl: './auth.component.html', 
   styleUrl: './auth.component.scss'
 })
