@@ -1,11 +1,12 @@
 footer {
     height: 60px;
-    width: 1440px;
+    width: 100%;
     background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
+    flex: 1;
 
     .terms-and-conditions {
         list-style-type: disc;
