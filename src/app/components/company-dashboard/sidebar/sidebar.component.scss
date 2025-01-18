@@ -1,0 +1,98 @@
+.wrapper {
+    width: 256px;
+    background-color: white;
+    border: 1px solid transparent; // if i remove it margin removes why??
+    height: 944px;
+
+    .box {
+        .button {
+            width: 100%;
+            height: 48px;
+            display: flex;
+
+            
+            button {
+                width: 244px;
+                background-color: white;
+                border: none;
+                padding: 12px;
+                font-size: 16px;
+                font-weight: 500;
+                display: flex;
+                align-items: center;
+                gap: 12px;
+                border-radius: 20px 0 0 20px;
+            }
+
+
+
+            .active-square {
+                width: 12px;
+                height: 48px;
+                display: flex;
+                align-items: center;
+                // display: none;
+                span {
+                    width: 4px;
+                    height: 24px;
+                
+                    background-color: white;
+                }
+            }
+        }
+
+        .active-route {
+            .active-square {
+                span {
+                    background-color: #4077FF;
+                }
+            }
+            button {
+                background-color: #4077FF1A;
+                color: #4077FF;
+                
+                svg {
+                    fill: #4077FF;
+                }
+            }                
+        }
+
+        .basic-routes {
+            margin: 20px 0;
+            height: 240px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+
+            .post-a-job {
+                button {
+                    width: 232px;
+                    border-radius: 12px;
+                    background-color: #4077FF;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border: none;
+                    color: white;
+                    font-size: 16px;
+                }
+            }
+        }
+
+        p {
+            color: #676D75;
+            margin-left: 28px;
+        }
+
+        .tools {
+            height: 112px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+    }
+}

@@ -10,7 +10,7 @@ import { ReviewUsComponent } from './components/auth/review-us/review-us.compone
 export const routes: Routes = [
     {
         path: '',
-        redirectTo: 'auth/login',
+        redirectTo: '',
         pathMatch: 'full',
     },
 
