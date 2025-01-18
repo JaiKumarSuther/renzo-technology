@@ -13,40 +13,37 @@ export const routes: Routes = [
         redirectTo: 'auth/login',
         pathMatch: 'full',
     },
-
     {
-        path: 'auth/login',
-        component: LoginComponent,
-    },
-
-    {
-        path: 'auth/signup',
-        component: SignupComponent,
-    },
-
-    {
-        path: 'auth/create-password',
-        component: CreatePasswordComponent,
-    },
-
-    {
-        path: 'auth/verify-otp',
-        component: OtpCodeComponent,
-    },
-
-    {
-        path: 'auth/password-reset-success',
-        component: ChangePasswordSuccessComponent,
-    },
-    
-    {
-        path: 'auth/reset-password',
-        component: ResetPasswordComponent,
-    },
-    
-    {
-        path: 'auth/review',
-        component: ReviewUsComponent,
+        path: 'auth',
+        children: [
+            {
+                path: 'login',
+                component: LoginComponent,
+            },
+            {
+                path: 'signup',
+                component: SignupComponent,
+            },
+            {
+                path: 'create-password',
+                component: CreatePasswordComponent,
+            },
+            {
+                path: 'verify-otp',
+                component: OtpCodeComponent,
+            },
+            {
+                path: 'password-reset-success',
+                component: ChangePasswordSuccessComponent,
+            },
+            {
+                path: 'reset-password',
+                component: ResetPasswordComponent,
+            },
+            {
+                path: 'review',
+                component: ReviewUsComponent,
+            },
+        ],
     },
 ];
-
